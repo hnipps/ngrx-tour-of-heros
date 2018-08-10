@@ -1,12 +1,12 @@
-import { NgModule, Optional, SkipSelf } from '@angular/core';
+import { NgModule, Optional, SkipSelf, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { StoreModule } from '@ngrx/store';
 import { StoreRouterConnectingModule } from '@ngrx/router-store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { routerReducer } from '@ngrx/router-store';
 
 import { environment } from '../../environments/environment';
-import { ModuleWithProviders } from '../../../node_modules/@angular/compiler/src/core';
 
 @NgModule({
   imports: [
